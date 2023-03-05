@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS auth.roles
+(
+    role_id    SERIAL PRIMARY KEY,
+    key        VARCHAR NOT NULL,
+    name       VARCHAR NOT NULL,
+    created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW()
+);
+
